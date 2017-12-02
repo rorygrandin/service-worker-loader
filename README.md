@@ -1,30 +1,30 @@
-# serviceworker-loader
+# service-worker-loader
 
 [![NPM version][npm]][npm-url]
 [![Node version][node]][node-url]
 [![Peer dependency status][peer-deps]][peer-deps-url]
 [![Dependency status][deps]][deps-url]
 
-[npm]: https://img.shields.io/npm/v/serviceworker-loader.svg
-[npm-url]: https://www.npmjs.com/package/serviceworker-loader
+[npm]: https://img.shields.io/npm/v/service-worker-loader.svg
+[npm-url]: https://www.npmjs.com/package/service-worker-loader
 
-[node]: https://img.shields.io/node/v/serviceworker-loader.svg
+[node]: https://img.shields.io/node/v/service-worker-loader.svg
 [node-url]: https://nodejs.org
 
-[peer-deps]: https://img.shields.io/david/peer/markdalgleish/serviceworker-loader.svg
-[peer-deps-url]: https://david-dm.org/markdalgleish/serviceworker-loader?type=peer
+[peer-deps]: https://img.shields.io/david/peer/mohsen1/service-worker-loader.svg
+[peer-deps-url]: https://david-dm.org/mohsen1/service-worker-loader?type=peer
 
-[deps]: https://img.shields.io/david/markdalgleish/serviceworker-loader.svg
-[deps-url]: https://david-dm.org/markdalgleish/serviceworker-loader
+[deps]: https://img.shields.io/david/mohsen1/service-worker-loader.svg
+[deps-url]: https://david-dm.org/mohsen1/service-worker-loader
 
 Modern ServiceWorker loader for [Webpack](https://webpack.js.org).
 
 ## Install
 
 ```sh
-npm i -D serviceworker-loader
+npm i -D service-worker-loader
 # or
-yarn add -D serviceworker-loader
+yarn add -D service-worker-loader
 ```
 
 ## [Usage](https://webpack.js.org/concepts/loaders)
@@ -64,4 +64,4 @@ This loader is based almost entirely on [worker-loader](https://github.com/webpa
 MIT
 
 ---
-[![NPM](https://nodei.co/npm/serviceworker-loader.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/serviceworker-loader/)
+[![NPM](https://nodei.co/npm/service-worker-loader.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/service-worker-loader/)
