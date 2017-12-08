@@ -1,6 +1,6 @@
 {
   "name": "service-worker-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Modern ServiceWorker loader for Webpack.",
   "authors": [
     {
@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "loader-utils": "^1.1.0",
-    "schema-utils": "^0.3.0"
+    "schema-utils": "^0.4.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -55,7 +55,7 @@
     "escope": "^3.6.0",
     "eslint": "^4.11.0",
     "eslint-config-trigen": "^2.2.0",
-    "rollup": "^0.50.0",
+    "rollup": "^0.52.1",
     "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-commonjs": "^8.2.4",
     "rollup-plugin-eslint": "^4.0.0",
