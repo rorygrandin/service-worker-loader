@@ -1,28 +1,59 @@
-# ServiceWorker loader for Webpack
+# service-worker-loader
 
-> A fork of [serviceworker-loader](https://github.com/markdalgleish/serviceworker-loader) that is actively maintained.
+[![NPM version][npm]][npm-url]
+[![Node version][node]][node-url]
+[![Peer dependency status][peer-deps]][peer-deps-url]
+[![Dependency status][deps]][deps-url]
 
-```bash
-$ npm install --save-dev service-worker-loader
+[npm]: https://img.shields.io/npm/v/service-worker-loader.svg
+[npm-url]: https://www.npmjs.com/package/service-worker-loader
+
+[node]: https://img.shields.io/node/v/service-worker-loader.svg
+[node-url]: https://nodejs.org
+
+[peer-deps]: https://img.shields.io/david/peer/mohsen1/service-worker-loader.svg
+[peer-deps-url]: https://david-dm.org/mohsen1/service-worker-loader?type=peer
+
+[deps]: https://img.shields.io/david/mohsen1/service-worker-loader.svg
+[deps-url]: https://david-dm.org/mohsen1/service-worker-loader
+
+Modern ServiceWorker loader for [Webpack](https://webpack.js.org).
+
+## Install
+
+```sh
+npm i -D service-worker-loader
+# or
+yarn add -D service-worker-loader
 ```
 
-## Usage
+## [Usage](https://webpack.js.org/concepts/loaders)
 
-[Documentation: Using loaders](http://webpack.github.io/docs/using-loaders.html)
+```js
+import registerServiceWorker, { ServiceWorkerNoSupportError } from 'service-worker!./sw';
 
-```javascript
-var registerServiceWorker = require("service-worker!./sw.js");
-
-registerServiceWorker({ scope: '/' }).then(success, error);
+registerServiceWorker({ scope: '/' }).then(() => {
+	console.log('Success!');
+}).catch((err) => {
+	
+	if (err instanceof ServiceWorkerNoSupportError) {
+		console.log('ServiceWorker is not supported.');
+	} else {
+		console.log('Error!');
+	}
+});
 ```
 
 ### Options
 
 #### `filename`
-Defaults to `"[hash].serviceworker.js"`. Specify the file name for generated Service Worker file
+Defaults to `"[hash].[name].js"`. Specify the file name for generated Service Worker file
 
 #### `publicPath`
-Overrides default `publicPath`. This in conjunction with [`CopyPlugin`](https://www.npmjs.com/package/copy-webpack-plugin) lets you serve the Service Worker file from root.
+Defaults to `"/"`. Overrides default `publicPath`. 
+
+#### `outputPath`
+Overrides output path for all ServiceWorkers.
 
 ## Credit
 
@@ -30,4 +61,7 @@ This loader is based almost entirely on [worker-loader](https://github.com/webpa
 
 ## License
 
-MIT (http://markdalgleish.mit-license.org)
+MIT
+
+---
+[![NPM](https://nodei.co/npm/service-worker-loader.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/service-worker-loader/)
