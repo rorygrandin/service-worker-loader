@@ -30,7 +30,7 @@ yarn add -D service-worker-loader
 ## [Usage](https://webpack.js.org/concepts/loaders)
 
 ```js
-import registerServiceWorker, { ServiceWorkerNoSupportError } from 'service-worker!./sw';
+import registerServiceWorker, { ServiceWorkerNoSupportError } from 'service-worker-loader!./sw';
 
 registerServiceWorker({ scope: '/' }).then(() => {
 	console.log('Success!');
