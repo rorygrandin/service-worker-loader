@@ -28,7 +28,7 @@ function pitch(request) {
 
 	const cb = this.async();
 
-	const filename = loaderUtils.interpolateName(this, options.filename || '[hash].[name].js', {
+	const filename = loaderUtils.interpolateName(this, options.filename || '[name].js', {
 		context: options.context || this.options.context,
 		regExp:  options.regExp
 	});
