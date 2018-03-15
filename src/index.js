@@ -29,7 +29,7 @@ function pitch(request) {
 	const cb = this.async();
 
 	const filename = loaderUtils.interpolateName(this, options.filename || '[name].js', {
-		context: options.context || this.rootContext || this.context,
+		context: options.context || this.rootContext || this.options.context,
 		regExp:  options.regExp
 	});
 
