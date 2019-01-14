@@ -33,7 +33,7 @@ function pitch(request) {
 		regExp:  options.regExp
 	});
 
-	const publicPath = options.publicPath || '/';
+	const publicPath = options.publicPath;
 
 	const outputOptions = {
 		filename,
